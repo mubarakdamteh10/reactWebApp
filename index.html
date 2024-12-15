@@ -5,9 +5,22 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
-      const app = document.getElementById('app');
+      // 🐍🐍🙉🙉🦉🦉
+      const app = document.getElementById("app")
+
+      function Header() {
+         return (<h1>🐍🐍🙉🙉🦉🦉</h1>)
+       }
+
+       function HomePage() {
+          return <div>
+            <Header />
+            <Header />
+          </div>;
+        }
+
       const root = ReactDOM.createRoot(app);
-      root.render(<h1>🦉🦉🦉🦉🐍🐍🐍</h1>);
+      root.render(<HomePage />);
     </script>
   </body>
 </html>
